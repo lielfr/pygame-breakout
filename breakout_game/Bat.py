@@ -20,7 +20,7 @@ class Bat(pygame.sprite.Sprite):
         # if pressed_keys[pygame.K_RIGHT]:
         #     self.rect.move_ip(1, 0)
         # self.rect.clamp_ip(Const.SCREENRECT)
-        if self.pos_x < 64:
+        if self.pos_x < 64: # 64 is the size of the bat div by 2
             self.pos_x = 64
         if self.pos_x > Const.screen_width - 64:
             self.pos_x = Const.screen_width - 64
