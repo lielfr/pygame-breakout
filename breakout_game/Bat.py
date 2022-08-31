@@ -11,7 +11,7 @@ class Bat(pygame.sprite.Sprite):
         self.pos_y -= 20
         self.rect.center = (self.pos_x, self.pos_y)
         self.bat_direction = 0
-        self.live_number = Const.initial_lives
+        self.live_number = Const.INITIAL_LIVES
 
     def update(self):
         # pressed_keys = pygame.key.get_pressed()
@@ -27,15 +27,17 @@ class Bat(pygame.sprite.Sprite):
         self.rect.center = (self.pos_x, self.pos_y)
 
     def reset(self):
-        self.live_number = Const.initial_lives
+        self.live_number = Const.INITIAL_LIVES
 
     def strike(self):
         self.live_number -= 1
 
     def move_left(self):
-        self.pos_x -= Const.bat_speed
+        self.pos_x -= Const.BAT_SPEED
+        self.bat_direction = -1
 
     def move_right(self):
-        self.pos_x += Const.bat_speed
+        self.pos_x += Const.BAT_SPEED
+        self.bat_direction = 1
 
 
