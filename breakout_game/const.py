@@ -8,3 +8,5 @@ class Const:
     INITIAL_LIVES = 3
     BAT_SPEED = 5
     FRAME_RATE = 120
+    RIGHT = 1
+    LEFT = -1

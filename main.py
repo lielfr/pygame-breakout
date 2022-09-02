@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # import pygame
 # import random
+import pygame
+import sys
 
-# from pygame.sprite import AbstractGroup
+from pygame.sprite import AbstractGroup
 from breakout_game import Game
 # SCREENRECT = pygame.Rect(0, 0, 640, 480)
 # bg_image = pygame.image.load('assets/bg.jpg')
@@ -43,13 +45,15 @@ from breakout_game import Game
 # def main():
 
 
-    # while loop(screen, bat):
-    #     pass
+#    while loop(screen, bat):
+#    pass
 
 
 if __name__ == '__main__':
     game = Game()
+
     while True:
         game.handle_events()
-        game.update()
         game.draw()
+        game.update()
+
