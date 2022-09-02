@@ -38,3 +38,4 @@ class Game:
     def draw(self):
         self.screen.fill(self.bg_color)
         self.all_sprites.draw(self.screen)
+
