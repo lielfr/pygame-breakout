@@ -30,12 +30,10 @@ class Game:
                 pygame.quit()
                 sys.exit()
 
-
     def update(self):
         self.all_sprites.update()
         pygame.display.update()
         self.clock.tick(Const.FRAME_RATE)
-
 
     def draw(self):
         self.screen.fill(self.bg_color)
