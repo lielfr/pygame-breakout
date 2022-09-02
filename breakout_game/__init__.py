@@ -10,7 +10,7 @@ class Game:
 
     def __init__(self):
         pygame.init()
-        # pygame.display.set_caption('Awesome Breakout Game!')
+        pygame.display.set_caption('Awesome Breakout Game!')
         self.screen = pygame.display.set_mode((Const.screen_width, Const.screen_height))
         self.clock = pygame.time.Clock()
 
