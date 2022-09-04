@@ -24,9 +24,9 @@ class Game:
 
     def handle_events(self):
         pressed_keys = pygame.key.get_pressed()
-        if pressed_keys[pygame.K_LEFT] and self.bat.pos_x - 64 - Const.BAT_SPEED >= 0:
+        if pressed_keys[pygame.K_LEFT] and self.bat.pos_x - Const.half_bat_size - Const.BAT_SPEED >= 0:
             self.bat.move(Const.LEFT)
-        if pressed_keys[pygame.K_RIGHT] and self.bat.pos_x + 64 + Const.BAT_SPEED <= Const.screen_width:
+        if pressed_keys[pygame.K_RIGHT] and self.bat.pos_x + Const.half_bat_size + Const.BAT_SPEED <= Const.screen_width:
             self.bat.move(Const.RIGHT)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -36,7 +36,7 @@ class Game:
     def update(self):
         # if the ball is off-screen you lose life, ahd the ball resets to the middle of the filed.
         if self.ball.is_off_screen():
-            self.bat.strike()
+            self.bat.die()
             self.ball.reset()
 
         # Hitting the bat

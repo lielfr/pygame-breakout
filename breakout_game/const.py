@@ -12,3 +12,10 @@ class Const:
     LEFT = -1
     collision_threshold = 12
     max_ball_speed = 6
+    ball_size = 18
+    bat_size = 128
+    bat_height_from_floor = 20
+
+    # calculated sizes
+    half_ball_size = ball_size / 2
+    half_bat_size = bat_size / 2

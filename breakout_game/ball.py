@@ -15,9 +15,9 @@ class Ball(pygame.sprite.Sprite):
 
     def update(self):
         # collision detection
-        if self.pos_x <= 9 or self.pos_x >= Const.screen_width - 9:
+        if self.pos_x <= Const.half_ball_size or self.pos_x >= Const.screen_width - 9:
             self.velocity[0] = -self.velocity[0]
-        if self.pos_y <= 9:
+        if self.pos_y <= Const.half_ball_size:
             self.velocity[1] = -self.velocity[1]
 
         # make sure we don't get stuck in a vertical or horizontal position.
