@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.26851mm"
+   height="10.26851mm"
+   viewBox="0 0 10.26851 10.26851"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="ball.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
+   sodipodi:docname="ball"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0233293"
+     inkscape:cx="35.584914"
+     inkscape:cy="85.502641"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4194"
+       x="-0.039029398"
+       y="-0.039029398"
+       width="1.0780588"
+       height="1.0780588">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.09604375"
+         id="feGaussianBlur4196" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-81.735901,-60.839363)">
+    <circle
+       style="mix-blend-mode:normal;fill:#0000ff;stroke:#383838;stroke-width:0.2825;stroke-opacity:1;filter:url(#filter4194)"
+       id="path1514"
+       cx="86.870155"
+       cy="65.973618"
+       r="4.7624998" />
+    <ellipse
+       style="fill:#0000ff;stroke:#383838;stroke-width:0.564999;stroke-opacity:1"
+       id="path4385"
+       cx="36.617283"
+       cy="76.462982"
+       rx="0.064872354"
+       ry="0.26229885" />
+  </g>
+</svg>
