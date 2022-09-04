@@ -33,4 +33,8 @@ class Ball(pygame.sprite.Sprite):
         self.rect.center = (self.pos_x, self.pos_y)
 
     def reset(self):
-        pass
+        self.pos_x = Const.screen_width / 2
+        self.pos_y = Const.screen_height / 2
+        self.velocity = [randint(2, 4), randint(-4, 4)]
+        self.rect.center = (self.pos_x, self.pos_y)
+
