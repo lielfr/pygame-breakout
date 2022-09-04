@@ -10,3 +10,5 @@ class Const:
     FRAME_RATE = 120
     RIGHT = 1
     LEFT = -1
+    collision_threshold = 12
+    max_ball_speed = 6

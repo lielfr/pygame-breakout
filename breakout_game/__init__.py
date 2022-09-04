@@ -20,8 +20,7 @@ class Game:
         self.ball = Ball()
 
         self.all_sprites = pygame.sprite.Group()
-        self.all_sprites.add(self.bat)
-        self.all_sprites.add(self.ball)
+        self.all_sprites.add(self.bat, self.ball)
 
     def handle_events(self):
         pressed_keys = pygame.key.get_pressed()
@@ -35,6 +34,10 @@ class Game:
                 sys.exit()
 
     def update(self):
+        if self.ball.is_off_screen():
+            self.bat.strike()
+            self.ball.reset()
+        self.ball.hit_bat(self.bat)
         self.all_sprites.update()
         pygame.display.update()
         self.clock.tick(Const.FRAME_RATE)
