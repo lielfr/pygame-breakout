@@ -38,17 +38,31 @@ class Ball(pygame.sprite.Sprite):
         self.velocity = [randint(2, 4), randint(-4, 4)]
         self.rect.center = (self.pos_x, self.pos_y)
 
+    '''
+    Checks if the ball went off-screen
+    '''
     def is_off_screen(self):
-        return self.pos_y > Const.screen_height
+        if self.pos_y > Const.screen_height:
+            return True
+        return False
 
+    '''
+    collision detection with the bat
+    :pram bat: the bat to collide with.
+    '''
     def hit_bat(self, bat):
         if self.rect.colliderect(bat.rect):
             if abs(self.rect.bottom-bat.rect.top) < Const.collision_threshold and self.velocity[1] > 0:
                 self.velocity[1] = -self.velocity[1]
                 self.velocity[0] += bat.bat_direction
-                if self.velocity[0] > Const.max_ball_speed:
+
+                # limiting the speed movement of the ball.
+                if self.velocity[0] > abs(Const.max_ball_speed):
+                    temp = self.velocity[0]
                     self.velocity[0] = Const.max_ball_speed
-                if self.velocity[0] < -Const.max_ball_speed:
-                    self.velocity[0] = -Const.max_ball_speed
+                    if temp < 0:
+                        self.velocity[0] *= -1
+
             else:
+                # if we don't hit the top of the bat (we are hitting the side of the bat)
                 self.velocity[0] = -self.velocity[0]
