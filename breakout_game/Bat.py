@@ -9,7 +9,7 @@ class Bat(pygame.sprite.Sprite):
         self.image = pygame.image.load('assets/bat.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.pos_y = Const.screen_height
-        self.pos_y -= 20    # lift the bat 20 pixels up the window/
+        self.pos_y -= Const.bat_height_from_floor    # lift the bat 20 pixels up the window/
         self.pos_x = Const.screen_width / 2     # locating the bat at the middle of the window
         self.rect.center = (self.pos_x, self.pos_y)
         self.bat_direction = 0
@@ -24,7 +24,7 @@ class Bat(pygame.sprite.Sprite):
     """
     If you get a strike you loose 1 live
     """
-    def strike(self):
+    def die(self):
         self.live_number -= 1
 
     """
