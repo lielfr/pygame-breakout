@@ -4,6 +4,7 @@ import sys
 
 from breakout_game.const import Const
 from breakout_game.Bat import Bat
+from breakout_game.ball import Ball
 
 
 class Game:
@@ -16,8 +17,11 @@ class Game:
 
         self.bg_color = pygame.Color("black")
         self.bat = Bat()
+        self.ball = Ball()
+
         self.all_sprites = pygame.sprite.Group()
         self.all_sprites.add(self.bat)
+        self.all_sprites.add(self.ball)
 
     def handle_events(self):
         pressed_keys = pygame.key.get_pressed()
@@ -38,4 +42,3 @@ class Game:
     def draw(self):
         self.screen.fill(self.bg_color)
         self.all_sprites.draw(self.screen)
-
