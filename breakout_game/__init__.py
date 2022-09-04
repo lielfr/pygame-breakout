@@ -34,10 +34,14 @@ class Game:
                 sys.exit()
 
     def update(self):
+        # if the ball is off-screen you lose life, ahd the ball resets to the middle of the filed.
         if self.ball.is_off_screen():
             self.bat.strike()
             self.ball.reset()
+
+        # Hitting the bat
         self.ball.hit_bat(self.bat)
+
         self.all_sprites.update()
         pygame.display.update()
         self.clock.tick(Const.FRAME_RATE)
