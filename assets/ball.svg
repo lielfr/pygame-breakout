@@ -10,10 +10,11 @@
    inkscape:export-filename="ball.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
-   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
-   sodipodi:docname="ball"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="ball.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -27,17 +28,29 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.0233293"
-     inkscape:cx="35.584914"
-     inkscape:cy="85.502641"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:zoom="11.445679"
+     inkscape:cx="11.401683"
+     inkscape:cy="17.604897"
+     inkscape:window-width="1390"
+     inkscape:window-height="1205"
+     inkscape:window-x="1160"
+     inkscape:window-y="115"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient872">
+      <stop
+         style="stop-color:#6f6fff;stop-opacity:0.67295599;"
+         offset="0"
+         id="stop870" />
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="1"
+         id="stop868" />
+    </linearGradient>
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
@@ -51,6 +64,16 @@
          stdDeviation="0.09604375"
          id="feGaussianBlur4196" />
     </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient872"
+       id="radialGradient876"
+       cx="86.870155"
+       cy="65.973618"
+       fx="86.870155"
+       fy="65.973618"
+       r="5.1342549"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -58,7 +81,7 @@
      id="layer1"
      transform="translate(-81.735901,-60.839363)">
     <circle
-       style="mix-blend-mode:normal;fill:#0000ff;stroke:#383838;stroke-width:0.2825;stroke-opacity:1;filter:url(#filter4194)"
+       style="mix-blend-mode:normal;fill:url(#radialGradient876);stroke:#383838;stroke-width:0.2825;stroke-opacity:1;filter:url(#filter4194);fill-opacity:1"
        id="path1514"
        cx="86.870155"
        cy="65.973618"
