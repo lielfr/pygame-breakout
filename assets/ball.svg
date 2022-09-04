@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:export-filename="ball.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="44.524475"
+   inkscape:export-ydpi="44.524475"
    inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
    sodipodi:docname="ball.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -29,12 +29,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="11.445679"
-     inkscape:cx="11.401683"
-     inkscape:cy="17.604897"
+     inkscape:cx="21.449143"
+     inkscape:cy="19.264912"
      inkscape:window-width="1390"
      inkscape:window-height="1205"
      inkscape:window-x="1160"
-     inkscape:window-y="115"
+     inkscape:window-y="87"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -81,7 +81,7 @@
      id="layer1"
      transform="translate(-81.735901,-60.839363)">
     <circle
-       style="mix-blend-mode:normal;fill:url(#radialGradient876);stroke:#383838;stroke-width:0.2825;stroke-opacity:1;filter:url(#filter4194);fill-opacity:1"
+       style="mix-blend-mode:normal;fill:url(#radialGradient876);fill-opacity:1;stroke:#383838;stroke-width:0.2825;stroke-opacity:1;filter:url(#filter4194)"
        id="path1514"
        cx="86.870155"
        cy="65.973618"
