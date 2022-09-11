@@ -42,6 +42,11 @@ class Game:
             Const.font_size_text
         )
 
+        self.font_score_bar = pygame.font.Font(
+            os.path.join('assets', 'PublicPixel.ttf'),
+            Const.font_size_score
+        )
+
         self.init_sprites()
 
     def handle_events(self):

@@ -17,7 +17,7 @@ class Ball(pygame.sprite.Sprite):
         # collision detection
         if self.pos_x <= Const.half_ball_size or self.pos_x >= Const.screen_width - 9:
             self.velocity[0] = -self.velocity[0]
-        if self.pos_y <= Const.half_ball_size:
+        if self.pos_y <= Const.half_ball_size + Const.game_top:
             self.velocity[1] = -self.velocity[1]
 
         # make sure we don't get stuck in a vertical or horizontal position.
@@ -42,9 +42,7 @@ class Ball(pygame.sprite.Sprite):
     Checks if the ball went off-screen
     '''
     def is_off_screen(self):
-        if self.pos_y > Const.screen_height:
-            return True
-        return False
+        return self.pos_y > Const.screen_height
 
     '''
     collision detection with the bat
