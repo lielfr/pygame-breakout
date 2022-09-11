@@ -69,4 +69,4 @@ class Ball(pygame.sprite.Sprite):
 
     def bounce_of_brick(self):
         self.velocity[0] = -self.velocity[0]
-        self.velocity[1] = -self.velocity[1]
+        self.velocity[1] = randint(-Const.max_ball_speed, Const.max_ball_speed)

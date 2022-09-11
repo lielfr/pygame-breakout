@@ -44,6 +44,7 @@ class Game:
 
         # Hitting the bat
         self.ball.hit_bat(self.bat)
+        self.bricks_manager.check_collisions(self.ball)
 
         self.all_sprites.update()
         pygame.display.update()
