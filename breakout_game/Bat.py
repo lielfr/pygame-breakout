@@ -1,12 +1,13 @@
 import pygame
 from breakout_game.const import Const
+import os.path
 
 
 class Bat(pygame.sprite.Sprite):
 
     def __init__(self, *groups):
         super().__init__(*groups)
-        self.image = pygame.image.load('assets/bat.png').convert_alpha()
+        self.image = pygame.image.load(os.path.join('assets', 'bat.png')).convert_alpha()
         self.rect = self.image.get_rect()
         self.pos_y = Const.screen_height
         self.pos_y -= Const.bat_height_from_floor    # lift the bat 20 pixels up the window/
