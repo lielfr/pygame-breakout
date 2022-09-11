@@ -28,7 +28,7 @@ class Game:
         self.screen = pygame.display.set_mode((Const.screen_width, Const.screen_height))
         self.clock = pygame.time.Clock()
 
-        self.bg_color = pygame.Color("black")
+        self.bg_image = pygame.image.load(os.path.join('assets', 'bg.jpg'))
         self.text_color = pygame.Color("orange")
         self.game_over = False
         self.score = Score()
@@ -112,7 +112,7 @@ class Game:
 
 
     def draw(self):
-        self.screen.fill(self.bg_color)
+        self.screen.blit(self.bg_image, (0, 0))
 
         if self.game_over or self.score.is_win():
             self.draw_game_end(self.score.is_win())
