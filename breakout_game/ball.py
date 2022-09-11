@@ -66,3 +66,7 @@ class Ball(pygame.sprite.Sprite):
             else:
                 # if we don't hit the top of the bat (we are hitting the side of the bat)
                 self.velocity[0] = -self.velocity[0]
+
+    def bounce_of_brick(self):
+        self.velocity[0] = -self.velocity[0]
+        self.velocity[1] = randint(-Const.max_ball_speed, Const.max_ball_speed)

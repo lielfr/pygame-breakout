@@ -17,10 +17,16 @@ class Const:
     bat_height_from_floor = 20
     brick_hits_before_destroy = 2
     brick_size = (63, 16)
-    brick_pad = 3
+    brick_pad_h = 68 #3
+    brick_pad_v = 10
     top_left = (0, 0)
     num_brick_images = 8
 
     # calculated sizes
     half_ball_size = ball_size / 2
     half_bat_size = bat_size / 2
+
+    # brick_rows = screen_width - brick_size[0] - brick_pad
+    brick_rows = 7
+    # brick_cols = screen_height // 3 - brick_size[1] - brick_pad
+    brick_cols = 8

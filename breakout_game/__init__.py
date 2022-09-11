@@ -19,10 +19,11 @@ class Game:
         self.bg_color = pygame.Color("black")
         self.bat = Bat()
         self.ball = Ball()
-        self.bricks_manager = BricksManager()
 
         self.all_sprites = pygame.sprite.Group()
-        self.all_sprites.add(self.bat, self.ball, self.bricks_manager.group)
+        self.all_sprites.add(self.bat, self.ball)
+
+        self.bricks_manager = BricksManager(self.all_sprites)
 
     def handle_events(self):
         pressed_keys = pygame.key.get_pressed()
@@ -43,6 +44,7 @@ class Game:
 
         # Hitting the bat
         self.ball.hit_bat(self.bat)
+        self.bricks_manager.check_collisions(self.ball)
 
         self.all_sprites.update()
         pygame.display.update()
