@@ -17,6 +17,8 @@ class Game:
         self.clock = pygame.time.Clock()
 
         self.bg_color = pygame.Color("black")
+        self.game_over = False
+
         self.bat = Bat()
         self.ball = Ball()
 
@@ -41,6 +43,8 @@ class Game:
         if self.ball.is_off_screen():
             self.bat.die()
             self.ball.reset()
+            if self.bat.live_number <= 0:
+                self.game_over = True
 
         # Hitting the bat
         self.ball.hit_bat(self.bat)
@@ -52,4 +56,8 @@ class Game:
 
     def draw(self):
         self.screen.fill(self.bg_color)
-        self.all_sprites.draw(self.screen)
+
+        if self.game_over:
+            pass
+        else:
+            self.all_sprites.draw(self.screen)

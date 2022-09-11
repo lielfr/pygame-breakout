@@ -15,7 +15,6 @@ class BricksManager:
                 self.all_sprites.add(brick)
                 self.all_bricks.add(brick)
 
-
     def check_collisions(self, ball):
         collision_list = pygame.sprite.spritecollide(ball, self.all_bricks, False)
         for brick in collision_list:
