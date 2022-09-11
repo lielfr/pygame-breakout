@@ -25,12 +25,14 @@ class Const:
     font_size_title = 32
     font_size_text = 18
     font_size_score = 10
+    score_pad = 5
+    score_per_hit = 10
+
+
+    brick_rows = 7
+    brick_cols = 8
 
     # calculated sizes
     half_ball_size = ball_size / 2
     half_bat_size = bat_size / 2
-
-    # brick_rows = screen_width - brick_size[0] - brick_pad
-    brick_rows = 7
-    # brick_cols = screen_height // 3 - brick_size[1] - brick_pad
-    brick_cols = 8
+    max_score = score_per_hit * brick_rows * brick_cols
