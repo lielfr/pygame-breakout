@@ -1,6 +1,7 @@
 import pygame
 from breakout_game import Const
 from breakout_game.brick import Brick
+from breakout_game.score_manager import Score
 
 
 class BricksManager:
@@ -20,3 +21,4 @@ class BricksManager:
         for brick in collision_list:
             ball.bounce_of_brick()
             brick.kill()
+            Score().add_score(Const.score_per_hit)
