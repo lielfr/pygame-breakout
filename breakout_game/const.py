@@ -21,6 +21,8 @@ class Const:
     brick_pad_v = 10
     top_left = (0, 0)
     num_brick_images = 8
+    font_size_title = 32
+    font_size_text = 18
 
     # calculated sizes
     half_ball_size = ball_size / 2
